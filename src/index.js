@@ -16,7 +16,7 @@ app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
 
-
+const port = process.env.PORT || 3000
 job.start()
 
 app.get('/', async (req, res) => {
@@ -55,6 +55,6 @@ app.get('/', async (req, res) => {
 })
 
 
-app.listen(3000, ()=> {
+app.listen(port, ()=> {
 	console.log('Sever is available')
 })
