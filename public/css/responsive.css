@@ -1,0 +1,100 @@
+
+
+@media screen and (max-width: 768px){
+	.container{
+		grid-template-areas: 
+		"header header header header"
+		"banner banner banner banner"
+		"content content content content"
+		"aside aside aside aside"
+		"detail detail detail detail"
+		"footer footer footer footer"
+	}
+	#header, #logo{
+		height: 95px;
+	}
+	#header{
+		background-color: #980e11;
+	}
+	#nar-bar2{
+		display: none;
+	}
+	#nar-bar1{
+		top:95px;
+		display: none;
+	}
+	.hide-nar-bar{
+		display: block;
+	}
+	#nar-bar1>ul{
+		flex-direction: column;
+	}
+	#nar-bar1>ul>li{
+		background-color: #efefef;
+	}
+	#nar-bar1>ul>li>a{
+		color: black;
+		text-align: left;
+	}
+	.sub-bar{
+		margin-left: 10px;
+		position: static;
+	}
+	.sub-bar a{
+		min-width: 100%;
+	}
+
+	.search{
+		display: none;
+	}
+	.flag{
+		margin-right: 10px;
+		margin-top: 12px;
+	}
+	.thanh-tim-kiem{
+		top:0px;
+		right: 0;
+		height: 100%;
+	}
+	.menu{
+		display: block;
+		border-left: 1px solid rgba(255,255,255,0.3);
+		color: white;
+	}
+	.menu>i{
+		font-size: 45px;
+		margin: 10px 25px;
+	}
+	.menu:hover{
+		background-color:#7b0c0e;
+	}   
+	
+
+}
+@media screen and (max-width:480px)
+{
+	.article{
+		flex-direction: column;
+	}
+	#header, #logo{
+		height: 65px;
+	}
+	
+	.flag{
+		border-left: 1px solid rgba(255,255,255,0.3);
+		margin: 0;	
+	}
+	.flag>img{
+		margin: 20px 10px ;
+		width: 38px;
+		
+	}
+	.menu>i{
+		font-size: 30px;
+		margin: 5px 20px;
+	}
+	.anh-noi-dung img{
+		width: 280px;
+		height: 180px;
+	}
+}
